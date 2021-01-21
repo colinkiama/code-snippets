@@ -1,6 +1,3 @@
-{
-  "Set Variables": {
-    "prefix": ["set"],
-    "body": ["{% set ${0:variableName} = ${1:variableValue} %}"]
-  }
-}
+{% set fsdjkflj = "fsjklfj" %}
+{% set variableName = "variableValue" %}
+{% set woop = "woop" %}
