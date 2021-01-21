@@ -1,6 +1,12 @@
 {
-  "Set Variables": {
+  "Set variable": {
     "prefix": ["set"],
     "body": ["{% set ${1:VARIABLE_NAME} = \"${2:VARIABLE_VALUE}\" %}"]
+  },
+  "Import component": {
+    "prefix": ["importc"],
+    "body": [
+      "{% import \"components/${1:COMPONENT_PATH}\" as ${2:NAMESPACE} %}"
+    ]
   }
 }
