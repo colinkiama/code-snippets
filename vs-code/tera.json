@@ -8,5 +8,9 @@
     "body": [
       "{% import \"components/${1:COMPONENT_PATH}\" as ${2:NAMESPACE} %}"
     ]
+  },
+  "Import module": {
+    "prefix": ["importm"],
+    "body": ["{% import \"modules/${1:MODULE_PATH}\" as ${2:NAMESPACE} %}"]
   }
 }
