@@ -1,0 +1,6 @@
+{
+  "Set Variables": {
+    "prefix": ["set"],
+    "body": ["{% set ${0:variableName} = ${1:variableValue} %}"]
+  }
+}
