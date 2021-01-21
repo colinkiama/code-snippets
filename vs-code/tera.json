@@ -1,16 +1,24 @@
 {
   "Set variable": {
     "prefix": ["set"],
-    "body": ["{% set ${1:VARIABLE_NAME} = \"${2:VARIABLE_VALUE}\" %}"]
+    "body": ["{% set ${1:variable_name} = \"${2:variable_value}\" %}"]
   },
   "Import component": {
     "prefix": ["importc"],
     "body": [
-      "{% import \"components/${1:COMPONENT_PATH}\" as ${2:NAMESPACE} %}"
+      "{% import \"components/${1:component_path}\" as ${2:namespace} %}"
     ]
   },
   "Import module": {
     "prefix": ["importm"],
-    "body": ["{% import \"modules/${1:MODULE_PATH}\" as ${2:NAMESPACE} %}"]
+    "body": ["{% import \"modules/${1:module_path}\" as ${2:namespace} %}"]
+  },
+  "Component macro definition": {
+    "prefix": ["macroc"],
+    "body": [
+      "{% macro ${1:macro_name}(${2:parmameters}, class=\"$3\") %}",
+      "\t$0",
+      "{% endmacro ${1:macro_name} %}"
+    ]
   }
 }
