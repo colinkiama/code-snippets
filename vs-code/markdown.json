@@ -1,0 +1,6 @@
+{
+  "Zola Content Page": {
+    "prefix": ["pagefile"],
+    "body": ["+++", "title=\"${1:page_title}\"", "+++", "$0"]
+  }
+}
