@@ -20,5 +20,23 @@
       "\t$0",
       "{% endmacro ${1:macro_name} %}"
     ]
+  },
+  "Component file": {
+    "prefix": ["componentfile"],
+    "body": [
+      "{% import \"components/${1:component_path}\" as ${2:namespace} %}",
+      "{% macro ${1:macro_name}(${2:parmameters}, class=\"$3\") %}",
+      "\t$0",
+      "{% endmacro ${1:macro_name} %}"
+    ]
+  },
+  "Module file": {
+    "prefix": ["modulefile"],
+    "body": [
+      "{% import \"modules/${1:module_path}\" as ${2:namespace} %}",
+      "{% macro ${1:macro_name}(${2:parmameters}, class=\"$3\") %}",
+      "\t$0",
+      "{% endmacro ${1:macro_name} %}"
+    ]
   }
 }
