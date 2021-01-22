@@ -25,18 +25,18 @@
     "prefix": ["componentfile"],
     "body": [
       "{% import \"components/${1:component_path}\" as ${2:namespace} %}",
-      "{% macro ${1:macro_name}(${2:parmameters}, class=\"$3\") %}",
+      "{% macro ${3:macro_name}(${4:parmameters}, class=\"$5\") %}",
       "\t$0",
-      "{% endmacro ${1:macro_name} %}"
+      "{% endmacro ${3:macro_name} %}"
     ]
   },
   "Module file": {
     "prefix": ["modulefile"],
     "body": [
-      "{% import \"modules/${1:module_path}\" as ${2:namespace} %}",
-      "{% macro ${1:macro_name}(${2:parmameters}, class=\"$3\") %}",
+      "{% import \"modules/${1:component_path}\" as ${2:namespace} %}",
+      "{% macro ${3:macro_name}(${4:parmameters}, class=\"$5\") %}",
       "\t$0",
-      "{% endmacro ${1:macro_name} %}"
+      "{% endmacro ${3:macro_name} %}"
     ]
   }
 }
