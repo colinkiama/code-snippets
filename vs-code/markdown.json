@@ -1,6 +1,17 @@
 {
-  "Zola Content Page": {
+  "Zola seection content file": {
     "prefix": ["pagefile"],
-    "body": ["+++", "title=\"${1:page_title}\"", "+++", "$0"]
+    "body": ["+++", "title = \"${1:page_title}\"", "+++\n", "$0"]
+  },
+  "Zola section content file": {
+    "prefix": ["sectionpage"],
+    "body": [
+      "+++",
+      "title = \"${1:section_title}\"",
+      "template = \"${2:section_template}\"",
+      "page_template = \"${3:page_template}\"",
+      "+++\n",
+      "$0"
+    ]
   }
 }
