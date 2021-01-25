@@ -1,0 +1,34 @@
+{
+  "Component config": {
+    "prefix": ["compconfig"],
+    "body": [
+      "{",
+      "  \"handle\": \"${1:handle}\",",
+      "  \"context\": {",
+      "    \"class\": \"${1:handle}\"",
+      "  }",
+      "}",
+      "$0"
+    ]
+  },
+  "Component config with variants": {
+    "prefix": ["compconfigv"],
+    "body": [
+      "{",
+      "  \"handle\": \"${1:handle}\",",
+      "  \"context\": {",
+      "    \"class\": \"${1:handle}\"",
+      "  },",
+      "  \"variants\": [ ",
+      "    {",
+      "      \"name\": \"${2:variant_name}\",",
+      "      \"context\": {",
+      "        \"class\": \"${1:handle} ${3:variant_classes}\"",
+      "      }",
+      "    }",
+      "  ]",
+      "}",
+      "$0"
+    ]
+  }
+}
