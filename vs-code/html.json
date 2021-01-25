@@ -1,0 +1,42 @@
+{
+  "Set variable": {
+    "prefix": ["set"],
+    "body": ["{% set ${1:variable_name} = \"${2:variable_value}\" %}"]
+  },
+  "Import component": {
+    "prefix": ["importc"],
+    "body": [
+      "{% import \"components/${1:component_path}\" as ${2:namespace} %}"
+    ]
+  },
+  "Import module": {
+    "prefix": ["importm"],
+    "body": ["{% import \"modules/${1:module_path}\" as ${2:namespace} %}"]
+  },
+  "Component macro definition": {
+    "prefix": ["macroc"],
+    "body": [
+      "{% macro ${1:macro_name}(${2:parmameters}, class=\"$3\") %}",
+      "\t$0",
+      "{% endmacro ${1:macro_name} %}"
+    ]
+  },
+  "Component file": {
+    "prefix": ["componentfile"],
+    "body": [
+      "{% import \"components/${1:component_path}\" as ${2:namespace} %}",
+      "{% macro ${3:macro_name}(${4:parmameters}, class=\"$5\") %}",
+      "\t$0",
+      "{% endmacro ${3:macro_name} %}"
+    ]
+  },
+  "Module file": {
+    "prefix": ["modulefile"],
+    "body": [
+      "{% import \"modules/${1:component_path}\" as ${2:namespace} %}",
+      "{% macro ${3:macro_name}(${4:parmameters}, class=\"$5\") %}",
+      "\t$0",
+      "{% endmacro ${3:macro_name} %}"
+    ]
+  }
+}
