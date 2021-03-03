@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+\$K.add('class', '${1:module_name}.${2:class_name}', {
+    init: function(app, module)
+    {
+        this.app = app;
+        $0
+    },
+    greet: function()
+    {
+    	console.log("Hello from ${1:class_name}");
+    }
+});
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>kubec</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+	<description>Kube class skeleton</description>
+</snippet>

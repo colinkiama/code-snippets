@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+\$K.add('service', '${1:service_name}', {
+    init: function(app)
+    {
+        this.app = app;
+        $0
+    },
+    stop: function()
+    {
+        console.log("${1:service_name} stopped.")
+    },
+    greet: function()
+    {
+    	console.log("Hello from ${1:service_name} service.")
+    }
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>kubes</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope> 
+	<description>Kube service skeleton</description>
+</snippet>

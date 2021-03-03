@@ -9,6 +9,7 @@
 
     this.params = context.getParams({
     	// Add your default parameters here
+      $0
     });
 },
  start: function () {
