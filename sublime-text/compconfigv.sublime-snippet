@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+		{
+			"handle": "${1:handle}",
+			"context": {
+				"class": "${1:handle}"
+			},
+			"variants": [
+			{
+				"name": "${2:variant_name}",
+				"context": {
+					"class": "${1:handle} ${3:variant_classes}"
+				}
+			}
+			]
+		}
+		$0
+]]>
+</content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>compconfigv</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.json</scope>
+	<description>Fractal comopnent configuration with variants</description>
+</snippet>
