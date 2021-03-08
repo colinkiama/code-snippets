@@ -15,7 +15,7 @@
  start: function () {
     this._build();
   },
-  build: function() {
+  _build: function() {
   	console.log("Built ${1:module_name} module.");
   },
   stop: function() {
